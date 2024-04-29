@@ -10,6 +10,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5c399beb-7381-4adb-ab43-564baa14b56b" name="Changes" comment="Actualizaciones a la teoría de mockito">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/iesvdm/employee/EmployeeInMemoryRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/iesvdm/employee/EmployeeInMemoryRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/iesvdm/employee/EmployeeManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/iesvdm/employee/EmployeeManagerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,11 +26,32 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;CGCM070&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/CGCM070/pruebas_mockito.git&quot;,
+    &quot;accountId&quot;: &quot;177deee0-39da-48b4-9f87-a81714e1569d&quot;
+  }
+}</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-core/5.11.0/mockito-core-5.11.0-sources.jar!/org/mockito/ArgumentMatchers.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-core/5.11.0/mockito-core-5.11.0.jar!/org/mockito/Mockito.class" root0="SKIP_INSPECTION" />
   </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -39,25 +61,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/usuario/IdeaProjects/proyecto_mockito/src",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.EmployeeInMemoryRepositoryTest.testEmployeeRepositoryFindAll.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EmployeeInMemoryRepositoryTest.testEmployeeRepositorySaveExistingEmployee.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EmployeeInMemoryRepositoryTest.testEmployeeRepositorySaveNewEmployee.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EmployeeManagerTest.testExampleOfArgumentCaptor.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EmployeeManagerTest.testExampleOfInOrderWithTwoMocks.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EmployeeManagerTest.testPayEmployeesInOrderWhenSeveralEmployeeArePresent.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EmployeeManagerTest.testPayEmployeesReturnOneWhenOneEmployeeIsPresentAndBankServicePayPaysThatEmployee.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EmployeeManagerTest.testPayEmployeesReturnZeroWhenNoEmployeesArePresent.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EmployeeManagerTest.testPayEmployeesWhenBankServiceThrowsException.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EmployeeManagerTest.testPayEmployeesWhenSeveralEmployeeArePresent.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MockMethodsTest.givenBehaviorIsConfiguredToThrowExceptionOnSecondCall_whenCallingOnlyOnce_thenNoExceptionIsThrown.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Testing&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/usuario/IdeaProjects/proyecto_mockito/src&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\usuario\IdeaProjects\proyecto_mockito\src" />
@@ -66,82 +103,82 @@
       <recent name="org.iesvdm.dominio" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ArgumentMatcherTest.anyArgumentTest">
-    <configuration name="ArgumentMatcherTest.anyAndAdditionalArgumentMatchersTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.EmployeeManagerTest.testPayEmployeesWhenBankServiceThrowsException">
+    <configuration name="EmployeeManagerTest.testExampleOfArgumentCaptor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="proyecto_mockito" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.iesvdm.dominio.*" />
+          <option name="PATTERN" value="org.iesvdm.employee.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.iesvdm.dominio" />
-      <option name="MAIN_CLASS_NAME" value="org.iesvdm.dominio.ArgumentMatcherTest" />
-      <option name="METHOD_NAME" value="anyAndAdditionalArgumentMatchersTest" />
+      <option name="PACKAGE_NAME" value="org.iesvdm.employee" />
+      <option name="MAIN_CLASS_NAME" value="org.iesvdm.employee.EmployeeManagerTest" />
+      <option name="METHOD_NAME" value="testExampleOfArgumentCaptor" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArgumentMatcherTest.anyArgumentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EmployeeManagerTest.testExampleOfInOrderWithTwoMocks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="proyecto_mockito" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.iesvdm.dominio.*" />
+          <option name="PATTERN" value="org.iesvdm.employee.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.iesvdm.dominio" />
-      <option name="MAIN_CLASS_NAME" value="org.iesvdm.dominio.ArgumentMatcherTest" />
-      <option name="METHOD_NAME" value="anyArgumentTest" />
+      <option name="PACKAGE_NAME" value="org.iesvdm.employee" />
+      <option name="MAIN_CLASS_NAME" value="org.iesvdm.employee.EmployeeManagerTest" />
+      <option name="METHOD_NAME" value="testExampleOfInOrderWithTwoMocks" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MockMethodsTest.whenMockMethodCallIsConfiguredToCallTheRealMethod_thenRealMethodIsCalled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EmployeeManagerTest.testPayEmployeesInOrderWhenSeveralEmployeeArePresent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="proyecto_mockito" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.iesvdm.dominio.*" />
+          <option name="PATTERN" value="org.iesvdm.employee.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.iesvdm.dominio" />
-      <option name="MAIN_CLASS_NAME" value="org.iesvdm.dominio.MockMethodsTest" />
-      <option name="METHOD_NAME" value="whenMockMethodCallIsConfiguredToCallTheRealMethod_thenRealMethodIsCalled" />
+      <option name="PACKAGE_NAME" value="org.iesvdm.employee" />
+      <option name="MAIN_CLASS_NAME" value="org.iesvdm.employee.EmployeeManagerTest" />
+      <option name="METHOD_NAME" value="testPayEmployeesInOrderWhenSeveralEmployeeArePresent" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MockVsSpyTest.whenThenReturn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EmployeeManagerTest.testPayEmployeesWhenBankServiceThrowsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="proyecto_mockito" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.iesvdm.dominio.*" />
+          <option name="PATTERN" value="org.iesvdm.employee.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.iesvdm.dominio" />
-      <option name="MAIN_CLASS_NAME" value="org.iesvdm.dominio.MockVsSpyTest" />
-      <option name="METHOD_NAME" value="whenThenReturn" />
+      <option name="PACKAGE_NAME" value="org.iesvdm.employee" />
+      <option name="MAIN_CLASS_NAME" value="org.iesvdm.employee.EmployeeManagerTest" />
+      <option name="METHOD_NAME" value="testPayEmployeesWhenBankServiceThrowsException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VerifyTest.givenInteractionsInOrder_whenVerifyingOrderOfInteractions_thenCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EmployeeManagerTest.testPayEmployeesWhenSeveralEmployeeArePresent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="proyecto_mockito" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.iesvdm.dominio.*" />
+          <option name="PATTERN" value="org.iesvdm.employee.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.iesvdm.dominio" />
-      <option name="MAIN_CLASS_NAME" value="org.iesvdm.dominio.VerifyTest" />
-      <option name="METHOD_NAME" value="givenInteractionsInOrder_whenVerifyingOrderOfInteractions_thenCorrect" />
+      <option name="PACKAGE_NAME" value="org.iesvdm.employee" />
+      <option name="MAIN_CLASS_NAME" value="org.iesvdm.employee.EmployeeManagerTest" />
+      <option name="METHOD_NAME" value="testPayEmployeesWhenSeveralEmployeeArePresent" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -149,13 +186,21 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ArgumentMatcherTest.anyArgumentTest" />
-        <item itemvalue="JUnit.ArgumentMatcherTest.anyAndAdditionalArgumentMatchersTest" />
-        <item itemvalue="JUnit.VerifyTest.givenInteractionsInOrder_whenVerifyingOrderOfInteractions_thenCorrect" />
-        <item itemvalue="JUnit.MockMethodsTest.whenMockMethodCallIsConfiguredToCallTheRealMethod_thenRealMethodIsCalled" />
-        <item itemvalue="JUnit.MockVsSpyTest.whenThenReturn" />
+        <item itemvalue="JUnit.EmployeeManagerTest.testPayEmployeesWhenBankServiceThrowsException" />
+        <item itemvalue="JUnit.EmployeeManagerTest.testExampleOfArgumentCaptor" />
+        <item itemvalue="JUnit.EmployeeManagerTest.testPayEmployeesInOrderWhenSeveralEmployeeArePresent" />
+        <item itemvalue="JUnit.EmployeeManagerTest.testExampleOfInOrderWithTwoMocks" />
+        <item itemvalue="JUnit.EmployeeManagerTest.testPayEmployeesWhenSeveralEmployeeArePresent" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -171,6 +216,12 @@
       <workItem from="1712905273657" duration="2892000" />
       <workItem from="1712940548762" duration="12792000" />
       <workItem from="1713177366619" duration="8742000" />
+      <workItem from="1713875473435" duration="154000" />
+      <workItem from="1713889059542" duration="64000" />
+      <workItem from="1714114976689" duration="4411000" />
+      <workItem from="1714230947104" duration="211000" />
+      <workItem from="1714246345008" duration="45000" />
+      <workItem from="1714376199519" duration="8000" />
     </task>
     <task id="LOCAL-00001" summary="inicial">
       <option name="closed" value="true" />
@@ -262,5 +313,9 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
