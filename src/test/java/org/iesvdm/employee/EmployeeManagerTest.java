@@ -55,6 +55,7 @@ public class EmployeeManagerTest {
     @Test
     public void testPayEmployeesReturnZeroWhenNoEmployeesArePresent() {
         when(employeeRepository.findAll()).thenReturn(asList());
+        assertThat(employeeManager.payEmployees()).isEqualTo(0);
     }
 
     /**
