@@ -19,6 +19,10 @@ public class EmployeeManagerTest {
 
     /**
      * Explica en este comentario que efecto tiene
+     * en el test el uso de la anotacion @InjectMocks
+     * en el atributo employeeManager, que a su vez
+     * inyecta a los mocks employeeRepository y bankService
+     *
      * esta anotacion @InjectMocks
      */
     @InjectMocks
