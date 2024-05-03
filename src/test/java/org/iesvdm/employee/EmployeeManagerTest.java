@@ -248,10 +248,13 @@ public class EmployeeManagerTest {
     @Test
     public void testArgumentMatcherExample() {
         when(employeeRepository.findAll()).thenReturn(asList(notToBePaid, toBePaid));
-        doThrow(new RuntimeException()).doNothing().when(bankService).pay(argThat(s -> s.equals("1")), anyDouble());
+        doThrow(new RuntimeException()).when(bankService).pay(argThat(s -> s.equals("1")), anyDouble());
+        doNothing().when(bankService).pay(argThat(s -> s.equals("2")), anyDouble());
         employeeManager.payEmployees();
         verify(notToBePaid).setPaid(false);
         verify(toBePaid).setPaid(true);
+        assertThat(notToBePaid.isPaid()).isFalse();
+        assertThat(toBePaid.isPaid()).isTrue();
 
     }
 
